@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import mercadopago from "mercadopago";
 
 mercadopago.configure({
-  access_token: "APP_USR-710779152861732-020914-9244f5e7f600e047dc31551db0dad06d-2257355231",
+  access_token: process.env.NEXT_ACCESS_TOKEN!,
 });
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
