@@ -18,6 +18,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       let paymentStatus = payment.body.status;
 
       console.log([payment, paymentStatus]);
+      //if(paymentStatus === "aproved"){
+        // Insertar en la BD
+      //}
     }
   } catch (error) {
     res.send(error);
