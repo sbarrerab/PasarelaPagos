@@ -64,12 +64,12 @@ export default function Home() {
           </div>
 
           <div className={styles.center}>
-            <span>Detalles de la suscripción:</span>
+            <span>Beneficios de la suscripción:</span>
 
             <ul>
-              {Product.description.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
+            {Product.description.map((item, index) =>
+              item === "" ? <br key={index} /> : <li key={index}>{item}</li>
+            )}
             </ul>
           </div>
 

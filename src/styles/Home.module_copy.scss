@@ -1,29 +1,25 @@
 .container {
-  background-color: #121212; /* Fondo oscuro */
-  color: #ffffff; /* Texto en color claro */
-  min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  min-height: 100vh;
+  background-color: #ebebeb;
+  position: relative;
 }
 
 .productContainer {
-  background-color: #1e1e1e; /* Fondo más claro para el producto */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  /*background-color: white;*/
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 100px;
-  /*padding: 3rem 2rem;*/
+  padding: 3rem 2rem;
   min-height: 750px;
   width: 85vw;
   margin: 2rem;
-  /*border-radius: 1rem;*/
+  border-radius: 1rem;
 
   img {
     object-fit: contain;
@@ -60,8 +56,6 @@
         max-width: 450px;
         display: flex;
         flex-direction: column;
-        list-style: none; /* Elimina los puntos */
-        padding-left: 0; /* Elimina el espaciado izquierdo */
 
         li {
           font-weight: 400;
